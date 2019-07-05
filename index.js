@@ -3,7 +3,7 @@ var express = require('express');
 var exphbs  = require('express-handlebars');
 var path = require('path');
 var app = express();
-
+var server = require('http').createServer(app);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('views', __dirname);
@@ -14,4 +14,4 @@ app.get('/', function(req, res){
     res.render('layouts/index');
 });
 
-app.listen(5000||process.env.PORT);
+server.listen(process.env.PORT || 3000);
