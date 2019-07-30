@@ -9,7 +9,6 @@ app.use(express.static(path.join(__dirname, 'views')));
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
-
 app.get('/', function(req, res){
     res.render('index');
 });

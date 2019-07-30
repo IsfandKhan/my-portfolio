@@ -1,4 +1,4 @@
-<!-- Masthead -->
+<!--Header-->
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
@@ -14,7 +14,7 @@
     </div>
   </header>
 
-  <!-- About Section -->
+  <!--About-->
   <section class="page-section bg-primary" id="about">
     <div class="container">
       <div class="row justify-content-center">
@@ -28,7 +28,7 @@
     </div>
   </section>
 <div></div>
-  <!-- Services Section -->
+  <!--Services-->
   <section class="page-section" id="services">
     <div class="container">
       <h2 class="text-center mt-0">At Your Service</h2>
@@ -66,7 +66,7 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!--Portfolio-->
   <a style="color:black;text-decoration:none" href="/projects/index.html"><h2 class="text-center mt-0">Projects</h2></a>
   <hr class="divider my-4">
   <section id="portfolio">
@@ -154,7 +154,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!--Contact-->
   <section class="page-section" id="contact">
     <div class="container">
       <div class="row justify-content-center">
@@ -171,7 +171,6 @@
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
           <a class="d-block" href="mailto:isfandyar_khan@live.co.uk">isfandyar_khan@live.co.uk</a>
         </div>
       </div>
@@ -181,17 +180,14 @@
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Isfand Yar Khan</div>
+      <div class="small text-center text-muted">Copyright &copy; <span id="year"></span><script>document.getElementById('year').innerHTML = new Date().getFullYear()</script> - Isfand Yar Khan</div>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
   <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-  <!-- Custom scripts for this template -->
   <script src="/js/creative.min.js"></script>
